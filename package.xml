@@ -6,14 +6,5 @@
   <description>Canary package to test conditional dependencies.</description>
   <maintainer email="steven@openrobotics.org">Steven! Ragnarök</maintainer>
   <license>Apache License 2.0</license>
-
-
-  <depend condition="$ROS_VERSION == 2">ament_cmake</depend>
-  <depend condition="$ROS_VERSION == 1">catkin</depend>
-
-  <export>
-    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
-    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
-  </export>
 </package>
 
